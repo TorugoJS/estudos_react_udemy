@@ -4,7 +4,6 @@ const FirstComponent = () => {
 
     //função
 
-
     /*
     multipla linhas
     */
