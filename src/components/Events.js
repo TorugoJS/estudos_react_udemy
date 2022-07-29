@@ -14,6 +14,15 @@ const Events = () => {
             <div>
                 <button onClick={handleClick}>Clique aqui!</button>
             </div>
+            <div>
+                <button onClick={() => console.log('Clicou!')}>Clique aqui também</button>
+                <button onClick={() => {
+                    if (true) {
+                        console.log("essa função não é recomendada")
+                    }
+                }}>Clique aqui, por favor</button>
+            </div>
+
         </div>
     )
 }
