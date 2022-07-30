@@ -7,6 +7,16 @@ const Events = () => {
         console.log("Ativou")
     }
 
+    const renderSomething = (x) => {
+        if (x) {
+            return <h1>Renderizando</h1>
+
+        } else {
+            return <h1>Renderizando isso então!</h1>
+
+        }
+    }
+
 
 
     return (
@@ -22,7 +32,8 @@ const Events = () => {
                     }
                 }}>Clique aqui, por favor</button>
             </div>
-
+                {renderSomething(true)}
+                {renderSomething(false)}
         </div>
     )
 }
