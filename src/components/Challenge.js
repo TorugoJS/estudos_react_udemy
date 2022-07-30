@@ -2,15 +2,16 @@
 
 const Challenge = () => {
 
-    const valorA = 10;
-    const valorB = 20;
-    const soma = valorA + valorB;
+    const a = 10;
+    const b = 20;
+
+    const handleSoma = () => {
+        console.log(a + b)
+    }
 
     return (
         <div>
-            <button onClick={()=>{
-              console.log(soma)
-            }}>Clique aqui para obter a soma!</button>
+            <button onClick={handleSoma}>Clique aqui para obter a soma!</button>
         </div>
     )
 }
