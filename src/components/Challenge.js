@@ -1,19 +1,19 @@
 
 
-const Challenge = () => {
+// const Challenge = () => {
 
-    const a = 10;
-    const b = 20;
+//     const a = 10;
+//     const b = 20;
 
-    const handleSoma = () => {
-        console.log(a + b)
-    }
+//     const handleSoma = () => {
+//         console.log(a + b)
+//     }
 
-    return (
-        <div>
-            <button onClick={handleSoma}>Clique aqui para obter a soma!</button>
-        </div>
-    )
-}
+//     return (
+//         <div>
+//             <button onClick={handleSoma}>Clique aqui para obter a soma!</button>
+//         </div>
+//     )
+// }
 
-export default Challenge;
+// export default Challenge;
