@@ -1,9 +1,11 @@
 
 import './App.css';
 
-import FirstComponent from './components/FirstComponent';
-import TemplateExpressions from './components/TemplateExpressions';
-import Events from './components/Events';
+import city from './assets/city.jpg'
+
+// import FirstComponent from './assets/components/FirstComponent';
+// import TemplateExpressions from './assets/components/TemplateExpressions';
+// import Events from './assets/components/Events';
 
 // import Challenge from './components/Challenge';
 
@@ -13,13 +15,16 @@ function App() {
       <h1>Fundamentos React</h1>
     {/*Imagem */}
     <div>
-      <img src="" alt=""/>
+      <img src="/img1.jpg" alt="paisagem"/>
+      <div>
+        <img src={city} alt="city"/>
+      </div>
     </div>
 
 
-      <FirstComponent />
+      {/* <FirstComponent />
       <TemplateExpressions />
-      <Events />
+      <Events /> */}
       {/* <Challenge /> */}
     </div>
   );
