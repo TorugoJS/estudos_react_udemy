@@ -11,6 +11,12 @@ function App() {
   return (
     <div className="App">
       <h1>Fundamentos React</h1>
+    {/*Imagem */}
+    <div>
+      <img src="" alt=""/>
+    </div>
+
+
       <FirstComponent />
       <TemplateExpressions />
       <Events />

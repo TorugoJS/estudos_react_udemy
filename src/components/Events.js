@@ -24,6 +24,7 @@ const Events = () => {
             <div>
                 <button onClick={handleClick}>Clique aqui!</button>
             </div>
+            
             <div>
                 <button onClick={() => console.log('Clicou!')}>Clique aqui também</button>
                 <button onClick={() => {
