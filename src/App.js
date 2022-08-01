@@ -2,6 +2,7 @@
 import './App.css';
 
 import city from './assets/city.jpg'
+import ManageData from './components/ManageData';
 
 // import FirstComponent from './assets/components/FirstComponent';
 // import TemplateExpressions from './assets/components/TemplateExpressions';
@@ -13,13 +14,17 @@ function App() {
   return (
     <div className="App">
       <h1>Fundamentos React</h1>
-    {/*Imagem */}
-    <div>
-      <img src="/img1.jpg" alt="paisagem"/>
+
+
+
+      {/*Imagem */}
       <div>
-        <img src={city} alt="city"/>
+        <img src="/img1.jpg" alt="paisagem" />
+        <div>
+          <img src={city} alt="city" />
+        </div>
+        <ManageData />
       </div>
-    </div>
 
 
       {/* <FirstComponent />
