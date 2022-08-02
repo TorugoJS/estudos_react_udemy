@@ -1,10 +1,12 @@
 
+import { useState } from 'react';
 import './App.css';
 
 import city from './assets/city.jpg'
 import CondicionalRender from './components/CondicionalRender';
 import ListRender from './components/ListRender';
 import ManageData from './components/ManageData';
+import ShowUserName from './components/ShowUserName';
 
 // import FirstComponent from './assets/components/FirstComponent';
 // import TemplateExpressions from './assets/components/TemplateExpressions';
@@ -13,6 +15,9 @@ import ManageData from './components/ManageData';
 // import Challenge from './components/Challenge';
 
 function App() {
+
+const [userName] = useState("Hugo")
+
   return (
     <div className="App">
       <h1>Fundamentos React</h1>
@@ -28,6 +33,7 @@ function App() {
         <ManageData />
         <ListRender />
         <CondicionalRender />
+        <ShowUserName name={userName}/>
       </div>
 
 
