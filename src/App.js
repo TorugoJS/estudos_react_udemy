@@ -17,12 +17,17 @@ import ShowUserName from './components/ShowUserName';
 
 function App() {
 
-  const [userName] = useState("Hugo")
+  const [userName] = useState("Hugo");
+
+  const cars = [
+    { id: 1, brand: "Ferrari", color: "Amarela", newCar: true, km: 0 },
+    { id: 2, brand: "Renault", color: "Branco", newCar: false, km: 5000 },
+    { id: 3, brand: "KIA", color: "Rosa", newCar: false, km: 10000 }
+  ]
 
   return (
     <div className="App">
       <h1>Fundamentos React</h1>
-
 
 
       {/*Imagem */}
@@ -39,6 +44,14 @@ function App() {
         {/*Reaproveitando */}
         <CarDetails brand="Ford" km={0} color="Azul" newCar={true} />
         <CarDetails brand="VW" km={4500} color="Vermelho" newCar={false} />
+        {cars.map((car) => (
+          <CarDetails
+            brand={car.brand}
+            color={car.color}
+            km={car.km}
+            newCar={car.newCar}
+          />
+        ))}
       </div>
 
 
