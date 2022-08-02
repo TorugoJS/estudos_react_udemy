@@ -17,7 +17,7 @@ import ShowUserName from './components/ShowUserName';
 
 function App() {
 
-const [userName] = useState("Hugo")
+  const [userName] = useState("Hugo")
 
   return (
     <div className="App">
@@ -34,8 +34,11 @@ const [userName] = useState("Hugo")
         <ManageData />
         <ListRender />
         <CondicionalRender />
-        <ShowUserName name={userName}/>
-        <CarDetails brand="Fiat" km={10000} color="Preto" />
+        <ShowUserName name={userName} />
+        <CarDetails brand="Fiat" km={10000} color="Preto" newCar={false} />
+        {/*Reaproveitando */}
+        <CarDetails brand="Ford" km={0} color="Azul" newCar={true} />
+        <CarDetails brand="VW" km={4500} color="Vermelho" newCar={false} />
       </div>
 
 
