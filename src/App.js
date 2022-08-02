@@ -3,6 +3,7 @@ import { useState } from 'react';
 import './App.css';
 
 import city from './assets/city.jpg'
+import CarDetails from './components/CarDetails';
 import CondicionalRender from './components/CondicionalRender';
 import ListRender from './components/ListRender';
 import ManageData from './components/ManageData';
@@ -34,6 +35,7 @@ const [userName] = useState("Hugo")
         <ListRender />
         <CondicionalRender />
         <ShowUserName name={userName}/>
+        <CarDetails brand="Fiat" km={10000} color="Preto" />
       </div>
 
 
