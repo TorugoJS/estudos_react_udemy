@@ -10,6 +10,7 @@ import ManageData from './components/ManageData';
 import ShowUserName from './components/ShowUserName';
 import Fragments from './components/Fragments';
 import Container from './components/Container';
+import ExecuteFunction from './components/ExecuteFunction';
 
 // import FirstComponent from './assets/components/FirstComponent';
 // import TemplateExpressions from './assets/components/TemplateExpressions';
@@ -25,7 +26,11 @@ function App() {
     { id: 1, brand: "Ferrari", color: "Amarela", newCar: true, km: 0 },
     { id: 2, brand: "Renault", color: "Branco", newCar: false, km: 5000 },
     { id: 3, brand: "KIA", color: "Rosa", newCar: false, km: 10000 }
-  ]
+  ];
+
+  function showMessage() {
+    console.log("Evento do componente pai")
+  }
 
   return (
     <div className="App">
@@ -70,6 +75,8 @@ function App() {
           <p>E este é o conteúdo</p>
         </Container>
 
+        {/* executar função */}
+        <ExecuteFunction myFunction={showMessage} />
 
       </div>
 
