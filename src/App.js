@@ -13,6 +13,7 @@ import Container from './components/Container';
 import ExecuteFunction from './components/ExecuteFunction';
 import Message from './components/Message';
 import ChangeMessageState from './components/ChangeMessageState';
+import MyComponent from './css/MyComponent';
 
 // import FirstComponent from './assets/components/FirstComponent';
 // import TemplateExpressions from './assets/components/TemplateExpressions';
@@ -97,6 +98,7 @@ function App() {
       <TemplateExpressions />
       <Events /> */}
       {/* <Challenge /> */}
+      <MyComponent />
     </div>
   );
 }
